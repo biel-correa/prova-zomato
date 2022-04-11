@@ -1,5 +1,5 @@
-from pages.restaurentes.Comentario import Comentario
-from pages.restaurentes.Restaurante import Restaurante
+from pages.restaurantes.Comentario import Comentario
+from pages.restaurantes.Restaurante import Restaurante
 
 restaurantes = [
     Restaurante(0, 'Teste 1', 'https://picsum.photos/300/200', 'Rua Teste 1', '10:00 - 22:00', [
