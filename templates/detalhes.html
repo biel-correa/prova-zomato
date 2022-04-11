@@ -1,6 +1,6 @@
 {% extends "base.html" %}
 
-{% block title %}Home{% endblock %}
+{% block title %}{{restaurante.nome}}{% endblock %}
 
 {% block content %}
 {% include 'navbar.html' %}
@@ -11,6 +11,17 @@
             <h3>{{restaurante.nome}}</h3>
             <p>Horário de funcionamento: <span>{{restaurante.horarioFuncionamento}}</span></p>
             <p>Endereço: <span>{{restaurante.endereco}}</span></p>
+        </div>
+        <div class="col-md-12">
+            <h3>Comentários:</h3>
+            {% for comentario in restaurante.comentarios %}
+            <div class="card my-2">
+                <div class="card-body">
+                    <h5 class="card-title">{{comentario.nome}}</h5>
+                    <p>{{comentario.comentario}}</p>
+                </div>
+            </div>
+            {% endfor %}
         </div>
     </div>
 </div>
