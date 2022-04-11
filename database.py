@@ -2,20 +2,20 @@ from pages.restaurantes.Comentario import Comentario
 from pages.restaurantes.Restaurante import Restaurante
 
 restaurantes = [
-    Restaurante(0, 'Teste 1', '00.jpg', 'Rua Teste 1', '10:00 - 22:00', [
-        Comentario(0, 'Nome 1', 'Teste 1'),
-        Comentario(1, 'Nome 2', 'Teste 2')
+    Restaurante(0, 'Restaurante 1', '00.jpg', 'Vila Sésamo', '10:00 - 22:00', [
+        Comentario(0, 'João', 'Lorem Ipsum is simply dummy text of the printing and typesetting industry.'),
+        Comentario(1, 'Pedro', 'Lorem Ipsum is simply dummy text of the printing and typesetting industry.')
         ]),
-    Restaurante(1, 'Teste 2', '01.jpg', 'Rua Teste 2', '10:00 - 22:00', [
-        Comentario(2, 'Nome 1', 'Teste 1'),
-        Comentario(3, 'Nome 2', 'Teste 2')
+    Restaurante(1, 'Restaurante 2', '01.jpg', 'Groove Street', '12:00 - 00:00', [
+        Comentario(2, 'Maria', 'Lorem Ipsum is simply dummy text of the printing and typesetting industry.'),
+        Comentario(3, 'Astolfo', 'Lorem Ipsum is simply dummy text of the printing and typesetting industry.')
         ]),
-    Restaurante(2, 'Teste 3', '02.jpg', 'Rua Teste 3', '10:00 - 22:00', [
-        Comentario(4, 'Nome 1', 'Teste 1'),
-        Comentario(5, 'Nome 2', 'Teste 2')
+    Restaurante(2, 'Restaurante 3', '02.jpg', 'Las Venturas', '7:00 - 15:00', [
+        Comentario(4, 'Leonardo', 'Lorem Ipsum is simply dummy text of the printing and typesetting industry.'),
+        Comentario(5, 'Abnete', 'Lorem Ipsum is simply dummy text of the printing and typesetting industry.')
         ]),
-    Restaurante(3, 'Teste 4', '03.jpg', 'Rua Teste 4', '10:00 - 22:00', [
-        Comentario(6, 'Nome 1', 'Teste 1'),
-        Comentario(7, 'Nome 2', 'Teste 2')
+    Restaurante(3, 'Restaurante 4', '03.jpg', 'Los Santos', '10:00 - 22:00', [
+        Comentario(6, 'Pedro 2', 'Lorem Ipsum is simply dummy text of the printing and typesetting industry.'),
+        Comentario(7, 'Michael', 'Lorem Ipsum is simply dummy text of the printing and typesetting industry.')
         ])
 ]
