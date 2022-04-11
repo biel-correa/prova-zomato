@@ -1,8 +1,9 @@
 from app import app
-from flask import render_template, redirect
+from flask import render_template
 from database import restaurantes
+from pages.restaurentes.RestauranteService import RestauranteService
 
-#get restaurant by id
 @app.route('/restaurante/<int:id>', methods=['GET'])
 def restaurante(id):
-    return render_template('home.html', restaurantes = restaurantes)
+    restaurante = RestauranteService.getById(id)
+    return render_template('detalhes.html', restaurante = restaurante)

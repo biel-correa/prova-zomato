@@ -1,0 +1,17 @@
+{% extends "base.html" %}
+
+{% block title %}Home{% endblock %}
+
+{% block content %}
+{% include 'navbar.html' %}
+<div class="container">
+    <div class="row">
+        <div class="col-md-12">
+            <img src="{{restaurante.imagem}}" class="img-fluid" alt="imagem do item {{restaurante.nome}}">
+            <h3>{{restaurante.nome}}</h3>
+            <p>Horário de funcionamento: <span>{{restaurante.horarioFuncionamento}}</span></p>
+            <p>Endereço: <span>{{restaurante.endereco}}</span></p>
+        </div>
+    </div>
+</div>
+{% endblock %}
