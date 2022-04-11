@@ -8,7 +8,7 @@
     <div class="row">
         {% for item in restaurantes %}
             <div class="card m-2" style="width: 18rem;">
-                <img class="card-img-top" src="{{item.imagem}}" alt="imagem do item {{item.nome}}">
+                <img class="card-img-top" src="{{ url_for('static', filename = item.imagem) }}" alt="imagem do item {{item.nome}}">
                 <div class="card-body">
                     <h5 class="card-title">{{item.nome}}</h5>
                     <a href="{{url_for('restaurante', id=item.id)}}" class="btn btn-primary">Ver Detalhes</a>
